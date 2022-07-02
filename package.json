@@ -1,7 +1,7 @@
 {
-  "name": "svelte-app",
+  "name": "@Devilz1/svelte-todo",
+  "repository": "git://github.com/Devilz1/svelte-todo",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
