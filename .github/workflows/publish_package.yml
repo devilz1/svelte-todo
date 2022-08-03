@@ -15,12 +15,9 @@ jobs:
           node-version: '12'
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@Devilz1'
-      - name: Replace token
-          run: echo "$(sed 's/\(_authToken=\)[a-z0-9]*\($\)/\1${{ env.GITHUB_TOKEN }}\2/g' .npmrc)" > .npmrc
-          env:
-            GITHUB_TOKEN: ${{ secrets.NPM_KEY }}
-      - name: Publish
-          run: npm publish
-          env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_KEY }}
+      - run: npm ci
+      - run: echo ${{ secrets.NPM_KEY }}
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_KEY }}
 
