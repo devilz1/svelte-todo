@@ -1,7 +1,7 @@
 {
   "name": "@Devilz1/svelte-todo",
   "repository": "git://github.com/Devilz1/svelte-todo",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
