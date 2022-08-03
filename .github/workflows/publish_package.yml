@@ -14,9 +14,8 @@ jobs:
         with:
           node-version: '12'
           registry-url: 'https://npm.pkg.github.com/'
-          scope: '@Devilz1'
       - run: npm ci
-      - run: echo ${{ secrets.NPM_KEY }}
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_KEY }}
 
