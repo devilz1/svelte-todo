@@ -29,21 +29,6 @@ jobs:
       - name: Install
         run: yarn
 
-      - name: Test and lint
-        run: yarn finish
-
-      - name: Generation of documentation
-        run: yarn docs
-
-      - name: Update documentation
-        run: |
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git config user.name "$GITHUB_ACTOR"
-          git add docs/
-          git push --follow-tags https://"$GITHUB_ACTOR":"$GITHUB_TOKEN"@github.com/"$GITHUB_REPOSITORY".git HEAD:master
-        env:
-          GITHUB_TOKEN: ${{ secrets.NPM_KEY }}
-
       - name: Build
         run: yarn build
 
