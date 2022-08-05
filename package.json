@@ -34,5 +34,8 @@
   "homepage": "https://github.com/microfront-poligon/svelte-todo#readme",
   "main": "rollup.config.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "@microfront-poligon:registry": "https://npm.pkg.github.com"
+  }
 }
