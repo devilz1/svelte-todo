@@ -1,5 +1,5 @@
 {
-  "name": "@devilz1/svelte-todo",
+  "name": "@microfront-poligon/svelte-todo",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
