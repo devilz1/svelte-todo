@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/microfront-poligon/svelte-todo/compare/v1.0.16...v1.0.17) (2022-08-05)
+
+
+### Bug Fixes
+
+* added npmrc file ([e08e866](https://github.com/microfront-poligon/svelte-todo/commit/e08e86636064570443535361a85267c5bcd2d963))
+
 ## [1.0.16](https://github.com/microfront-poligon/svelte-todo/compare/v1.0.15...v1.0.16) (2022-08-05)
 
 
