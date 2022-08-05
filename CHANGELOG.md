@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/devilz1/svelte-todo/compare/v1.0.10...v1.0.11) (2022-08-05)
+
+
+### Bug Fixes
+
+* changed text ([e736aa1](https://github.com/devilz1/svelte-todo/commit/e736aa18eb0fa27a5931e9558334e2995de44f00))
+
 ## [1.0.10](https://github.com/devilz1/svelte-todo/compare/v1.0.9...v1.0.10) (2022-08-05)
 
 
