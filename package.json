@@ -25,13 +25,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devilz1/svelte-todo.git"
+    "url": "git+https://github.com/microfront-poligon/svelte-todo.git"
   },
   "description": "---",
   "bugs": {
-    "url": "https://github.com/devilz1/svelte-todo/issues"
+    "url": "https://github.com/microfront-poligon/svelte-todo/issues"
   },
-  "homepage": "https://github.com/devilz1/svelte-todo#readme",
+  "homepage": "https://github.com/microfront-poligon/svelte-todo#readme",
   "main": "rollup.config.js",
   "author": "",
   "license": "ISC"
