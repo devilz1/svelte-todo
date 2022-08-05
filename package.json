@@ -1,6 +1,5 @@
 {
   "name": "@devilz1/svelte-todo",
-  "version": "1.0.17",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -23,7 +22,13 @@
     "type": "git",
     "url": "git+https://github.com/devilz1/svelte-todo.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "description": "---",
+  "bugs": {
+    "url": "https://github.com/devilz1/svelte-todo/issues"
+  },
+  "homepage": "https://github.com/devilz1/svelte-todo#readme",
+  "version": "1.0.1",
+  "main": "rollup.config.js",
+  "author": "",
+  "license": "ISC"
 }
