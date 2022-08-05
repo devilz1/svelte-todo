@@ -27,7 +27,6 @@
     "url": "https://github.com/devilz1/svelte-todo/issues"
   },
   "homepage": "https://github.com/devilz1/svelte-todo#readme",
-  "version": "1.0.1",
   "main": "rollup.config.js",
   "author": "",
   "license": "ISC"
