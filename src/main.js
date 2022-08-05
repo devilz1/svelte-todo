@@ -1,10 +1,10 @@
 import App from './App.svelte';
 
-const app = new App({
+const AppTodo = new App({
 	target: document.body,
 	props: {
 		name: 'world'
 	}
 });
 
-export default app;
+export default AppTodo;
