@@ -1,7 +1,6 @@
 {
   "name": "@devilz1/svelte-todo",
-  "repository": "git+https://github.com/Devilz1/svelte-todo.git",
-  "version": "1.0.14",
+  "version": "1.0.17",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -19,5 +18,12 @@
   },
   "dependencies": {
     "sirv-cli": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devilz1/svelte-todo.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
