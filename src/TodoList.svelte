@@ -27,7 +27,7 @@
     <label for="input-todo">Название дела</label>
     <input on:keydown={handleKeyDown} bind:value={newTodo} id="input-todo" type="text" placeholder="Press write...">
 
-    <button on:click={addAffair}>Add</button>
+    <button on:click={addAffair}>Add new part</button>
 
     <ul class="list">
         {#each todoList as todo, i}
