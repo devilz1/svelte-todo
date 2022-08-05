@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/microfront-poligon/svelte-todo/compare/v1.0.15...v1.0.16) (2022-08-05)
+
+
+### Bug Fixes
+
+* changed fields from package.json and package-lock.json files ([3c01663](https://github.com/microfront-poligon/svelte-todo/commit/3c01663de0ed40f018793e1b8a86b119e8c22abf))
+
 ## [1.0.15](https://github.com/devilz1/svelte-todo/compare/v1.0.14...v1.0.15) (2022-08-05)
 
 
