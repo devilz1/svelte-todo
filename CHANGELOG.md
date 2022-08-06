@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/microfront-poligon/svelte-todo/compare/v1.0.18...v1.0.19) (2022-08-06)
+
+
+### Bug Fixes
+
+* added typescript functionality, added *d.ts file ([088f10e](https://github.com/microfront-poligon/svelte-todo/commit/088f10e35893228af3c7420c98912b31399287e9))
+
 ## [1.0.18](https://github.com/microfront-poligon/svelte-todo/compare/v1.0.17...v1.0.18) (2022-08-05)
 
 
