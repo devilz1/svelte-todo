@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import TodoList from "./TodoList.svelte";
 	export let name = 'TITLE!';
 </script>
