@@ -1,10 +1,20 @@
 const path = require('path');
 const sveltePreprocess = require('svelte-preprocess');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const projectPaths = {
+    src: path.resolve(__dirname, './src'),
+    build: path.resolve(__dirname, './dist'),
+    public: path.resolve(__dirname, './public'),
+};
 
 module.exports = {
+    mode: 'development',
+    target: 'web',
     entry: {
-        'bundle': ['./src/main.ts']
+        'bundle': [projectPaths.src + '/main.ts']
     },
+    devtool: 'eval-source-map',
     resolve: {
         alias: {
             svelte: path.dirname(require.resolve('svelte/package.json'))
@@ -13,7 +23,9 @@ module.exports = {
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
     output: {
-        path: path.join(__dirname, '/build'),
+        path: projectPaths.build,
+        filename: '[name].build.js',
+        clean: true
     },
     module: {
         rules: [
@@ -22,15 +34,43 @@ module.exports = {
                 loader: 'ts-loader',
                 exclude: /node_modules/
             },
+            {test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource'},
+
+            {test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline'},
+
             {
-                test: /\.svelte$/,
+                test: /node_modules\/svelte\/.*\.mjs$/,
+                resolve: {
+                    fullySpecified: false,
+                },
+            },
+            {
+                test: /\.(html|svelte)$/,
                 use: {
                     loader: 'svelte-loader',
                     options: {
-                        preprocess: sveltePreprocess(),
+                        compilerOptions: {
+                            dev: true,
+                        },
+                        emitCss: false,
+                        hotReload: true,
+                        preprocess: sveltePreprocess({
+                            postcss: true,
+                        }),
                     }
                 }
             }
         ]
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+        }),
+    ],
+    devServer: {
+        open: true,
+        liveReload: true,
+        compress: true,
+        port: 9000,
     },
 };
