@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/microfront-poligon/svelte-todo/compare/v1.0.20...v1.0.21) (2022-08-11)
+
+
+### Bug Fixes
+
+* remove rollup ([9ae4b9b](https://github.com/microfront-poligon/svelte-todo/commit/9ae4b9b11c99ef5a648ef8b79c6e3a5592907975))
+
 ## [1.0.20](https://github.com/microfront-poligon/svelte-todo/compare/v1.0.19...v1.0.20) (2022-08-06)
 
 
