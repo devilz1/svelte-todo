@@ -23,9 +23,10 @@ module.exports = {
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
     output: {
+        publicPath: 'auto',
         path: projectPaths.build,
-        filename: '[name].build.js',
-        clean: true
+        filename: '[name].bundle.js',
+        clean: true,
     },
     module: {
         rules: [
